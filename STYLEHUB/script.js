@@ -4,343 +4,198 @@
 // 1. PRODUCT CATALOGUE
 // All prices are sample Nigerian Naira prices.
 // =====================================
-
 const products = [
-    // FABRICS AND CLOTHING
+
+    // =====================================
+    // ANKARA CLOTHING
+    // =====================================
+
+       {
+        id: 1,
+        name: "Colourful Ankara Street Dress",
+        category: "clothes",
+        description: "A stylish Ankara street dress with a colourful African print.",
+        price: 28500,
+        image: "images/ankara/womens/ankara-colourful-street-dress.jpg",
+        badge: "NEW ARRIVAL"
+    },
 
     {
-        id: 1,
-        name: "Beautiful Ankara Fabric",
+        id: 2,
+        name: "Emerald Green and Gold Ankara Gown",
+        category: "clothes",
+        description: "An elegant green and gold Ankara gown for special occasions.",
+        price: 42000,
+        image: "images/ankara/womens/ankara-green-gold-gown.jpg",
+        badge: "STYLE PICK"
+    },
+
+    {
+        id: 3,
+        name: "Green Ankara Two-Piece Outfit",
+        category: "clothes",
+        description: "A coordinated Ankara two-piece outfit with a modern design.",
+        price: 38000,
+        image: "images/ankara/womens/ankara-green-two-piece.jpg",
+        badge: "TRENDING"
+    },
+
+    {
+        id: 4,
+        name: "Ankara Flare-Sleeve Gown",
+        category: "clothes",
+        description: "A beautiful Ankara gown featuring elegant flared sleeves.",
+        price: 35000,
+        image: "images/ankara/womens/ankara-flare-sleeve-gown.jpg",
+        badge: "NEW ARRIVAL"
+    },
+
+   {
+        id: 18,
+        name: "Blue and Green Ankara Dress",
+        category: "clothes",
+        description: "A beautiful blue and green Ankara dress with a colourful African-inspired design.",
+        price: 39000,
+        image: "images/ankara/womens/ankara-blue-green-dress.jpg",
+        badge: "NEW ARRIVAL"
+    },
+
+
+    // =====================================
+    // ANKARA FABRICS
+    // =====================================
+
+    {
+        id: 5,
+        name: "Premium Cotonou Ankara",
         category: "fabrics",
-        description: "Colourful African print fabric for standout outfits.",
-        price: 18500,
-        oldPrice: 23000,
+        description: "Colourful Ankara material for beautiful custom-made outfits.",
+        price: 22000,
         image: "images/cotonou-fabrics.jpg",
         badge: "BESTSELLER"
     },
 
     {
-        id: 2,
-        name: "Luxury Lace Fabric",
-        category: "fabrics",
-        description: "Elegant lace for celebrations and special occasions.",
-        price: 25000,
-        image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=85"
-    },
-
-    {
-        id: 3,
-        name: "Premium Chiffon Fabric",
-        category: "fabrics",
-        description: "Lightweight chiffon for flowing, graceful outfits.",
-        price: 15000,
-        image: "https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=800&q=85"
-    },
-
-    {
-        id: 4,
-        name: "Elegant Women's Gown",
-        category: "clothes",
-        description: "A graceful statement gown for special moments.",
-        price: 32000,
-        oldPrice: 40000,
-        image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=85",
-        badge: "20% OFF"
-    },
-
-    {
-        id: 5,
-        name: "Classic Denim Jeans",
-        category: "clothes",
-        description: "An easy wardrobe essential for everyday style.",
-        price: 22000,
-        image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=85"
-    },
-
-    {
         id: 6,
-        name: "Fashion Casual Top",
-        category: "clothes",
-        description: "A versatile top for relaxed, polished outfits.",
-        price: 12500,
-        image: "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=800&q=85"
-    },
-
-
-    // SHOES
-
-    {
-        id: 7,
-        name: "Classic Red Sneakers",
-        category: "shoes",
-        description: "Comfortable sneakers with a confident finish.",
-        price: 35000,
-        oldPrice: 43000,
-        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=85",
-        badge: "POPULAR"
-    },
-
-    {
-        id: 8,
-        name: "Elegant Women's Heels",
-        category: "shoes",
-        description: "A refined pair for evenings and celebrations.",
-        price: 28000,
-        image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=85"
-    },
-
-    {
-        id: 9,
-        name: "Fashion Sandals",
-        category: "shoes",
-        description: "Stylish sandals made for easy outings.",
-        price: 18000,
-        image: "https://images.unsplash.com/photo-1603487742131-4160ec999306?auto=format&fit=crop&w=800&q=85"
-    },
-
-
-    // COSMETICS
-
-    {
-        id: 10,
-        name: "Luxury Lipstick",
-        category: "cosmetics",
-        description: "A rich colour to complete your beauty routine.",
-        price: 8500,
-        image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=85"
-    },
-
-    {
-        id: 11,
-        name: "Beauty Foundation",
-        category: "cosmetics",
-        description: "A smooth everyday base for your makeup look.",
-        price: 12000,
-        image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=85"
-    },
-
-    {
-        id: 12,
-        name: "Skincare Essentials",
-        category: "cosmetics",
-        description: "Daily skincare favourites for a fresh routine.",
-        price: 15000,
-        image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85"
-    },
-
-
-    // ACCESSORIES
-
-    {
-        id: 13,
-        name: "Luxury Handbag",
-        category: "accessories",
-        description: "A timeless handbag to elevate your look.",
-        price: 28000,
-        oldPrice: 35000,
-        image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=85",
-        badge: "STYLE PICK"
-    },
-
-    {
-        id: 14,
-        name: "Classic Wristwatch",
-        category: "accessories",
-        description: "A clean, classic watch for everyday elegance.",
-        price: 22000,
-        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85"
-    },
-
-    {
-        id: 15,
-        name: "Beautiful Earrings",
-        category: "accessories",
-        description: "Elegant earrings for a polished finish.",
-        price: 7500,
-        image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=85"
-    },
-
-
-    // MORE AFRICAN FABRICS
-
-    {
-        id: 16,
-        name: "Ankara Market Collection",
+        name: "Orange Heritage Ankara Print",
         category: "fabrics",
-        description: "African wax prints with bold, colourful patterns.",
-        price: 18500,
-        image: "images/orange-african-print.jpg"
-    },
-
-    {
-        id: 17,
-        name: "Cotonou Heritage Ankara",
-        category: "fabrics",
-        description: "A vibrant textile selection for creative designs.",
-        price: 22000,
-        image: "images/cotonou-fabrics.jpg"
-    },
-
-    {
-        id: 18,
-        name: "Orange and Black African Print",
-        category: "fabrics",
-        description: "A striking print for modern African fashion.",
+        description: "Bold orange and black African-inspired wax print.",
         price: 19500,
         image: "images/orange-african-print.jpg"
     },
 
     {
-        id: 19,
-        name: "Multicolour Geometric Textile",
+        id: 7,
+        name: "Geometric Ankara Print",
         category: "fabrics",
-        description: "Geometric motifs with a bright modern finish.",
+        description: "A striking geometric Ankara design for creative tailoring.",
         price: 21000,
-        image: "images/geometric-textile.jpg"
+        image: "images/geometric-textile.jpg",
+        badge: "STYLE PICK"
     },
 
     {
-        id: 20,
-        name: "Colourful Cotton Fabric",
+        id: 8,
+        name: "Colourful Ankara Cotton",
         category: "fabrics",
-        description: "A beautiful cotton selection for designers.",
+        description: "A vibrant patterned cotton fabric for everyday designs.",
         price: 15000,
         image: "images/colourful-fabric.jpg"
     },
 
     {
-        id: 21,
-        name: "Premium Fabric Rolls",
+        id: 9,
+        name: "Luxury Ankara Fabric Rolls",
         category: "fabrics",
-        description: "A beautiful selection for your next creation.",
+        description: "Beautiful fabric rolls for designers and fashion lovers.",
         price: 25000,
         image: "images/fabric-rolls.jpg"
     },
 
+    {
+        id: 10,
+        name: "Ankara Market Print Collection",
+        category: "fabrics",
+        description: "A colourful selection of African-inspired textile prints.",
+        price: 18500,
+        image: "images/ankara-market-fixed.jpg",
+        badge: "POPULAR"
+    },
+        
 
-    // NEW ARRIVALS
+    // =====================================
+    // COSMETICS
+    // =====================================
 
     {
-        id: 22,
-        name: "Men's Heritage Kaftan",
-        category: "clothes",
-        description: "A smart traditional look with refined details.",
-        price: 38000,
-        oldPrice: 46000,
-        image: "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&q=85",
-        badge: "NEW ARRIVAL"
+        id: 11,
+        name: "Maybelline Colour Lipstick",
+        category: "cosmetics",
+        description: "Lip colour from the Maybelline beauty range.",
+        price: 12500,
+        image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=85"
     },
 
     {
-        id: 23,
-        name: "Ankara Two-Piece Set",
-        category: "clothes",
-        description: "A coordinated African-inspired outfit with flair.",
-        price: 29500,
-        image: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=85",
-        badge: "NEW ARRIVAL"
+        id: 12,
+        name: "L'Oréal Beauty Foundation",
+        category: "cosmetics",
+        description: "Foundation from the L'Oréal makeup range.",
+        price: 18500,
+        image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=800&q=85"
     },
 
     {
-        id: 24,
-        name: "Tailored Everyday Blazer",
-        category: "clothes",
-        description: "A versatile layer for workdays and weekends.",
-        price: 34000,
-        image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=85",
-        badge: "NEW ARRIVAL"
+        id: 13,
+        name: "NIVEA Skincare Essentials",
+        category: "cosmetics",
+        description: "Skincare products from the NIVEA range.",
+        price: 15000,
+        image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85"
     },
 
-    {
-        id: 25,
-        name: "Leather Loafers",
-        category: "shoes",
-        description: "A polished staple for smart casual dressing.",
-        price: 26500,
-        oldPrice: 32000,
-        image: "https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=800&q=85",
-        badge: "NEW ARRIVAL"
-    },
+
+    // =====================================
+    // ACCESSORIES
+    // =====================================
 
     {
-        id: 26,
-        name: "Everyday Crossbody Bag",
+        id: 14,
+        name: "Classic Luxury Handbag",
         category: "accessories",
-        description: "A compact bag for days when you are on the move.",
+        description: "An elegant handbag for everyday and special occasions.",
+        price: 28000,
+        image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=85",
+        badge: "STYLE PICK"
+    },
+
+    {
+        id: 15,
+        name: "Classic Wristwatch",
+        category: "accessories",
+        description: "A timeless watch with a clean, elegant finish.",
+        price: 22000,
+        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85"
+    },
+
+    {
+        id: 16,
+        name: "Elegant Fashion Earrings",
+        category: "accessories",
+        description: "Beautiful earrings to complete your outfit.",
+        price: 7500,
+        image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=85"
+    },
+
+    {
+        id: 17,
+        name: "Modern Crossbody Bag",
+        category: "accessories",
+        description: "A practical and stylish bag for everyday use.",
         price: 24000,
         image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=85",
         badge: "NEW ARRIVAL"
-    },
-
-    {
-        id: 27,
-        name: "Gold-Tone Jewellery Set",
-        category: "accessories",
-        description: "A coordinated set for a little extra sparkle.",
-        price: 16500,
-        image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=85",
-        badge: "NEW ARRIVAL"
-    },
-
-    {
-        id: 28,
-        name: "Modern Classic Sunglasses",
-        category: "accessories",
-        description: "An easy finishing touch for sunny days.",
-        price: 11000,
-        image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=85",
-        badge: "NEW ARRIVAL"
-    },
-
-    {
-        id: 29,
-        name: "Lip Gloss Collection",
-        category: "cosmetics",
-        description: "A versatile gloss collection for every mood.",
-        price: 9500,
-        image: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=85",
-        badge: "NEW ARRIVAL"
-    },
-
-    {
-        id: 30,
-        name: "Body Care Gift Set",
-        category: "cosmetics",
-        description: "A thoughtful collection for a self-care moment.",
-        price: 18500,
-        image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85",
-        badge: "NEW ARRIVAL"
-    },
-
-    {
-        id: 31,
-        name: "Decorative Cushion Pair",
-        category: "home",
-        description: "Soft accent cushions to refresh your space.",
-        price: 14500,
-        image: "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=800&q=85",
-        badge: "NEW ARRIVAL"
-    },
-
-    {
-        id: 32,
-        name: "Minimal Ceramic Vase",
-        category: "home",
-        description: "A simple decorative piece for shelves and tables.",
-        price: 12500,
-        image: "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=800&q=85",
-        badge: "NEW ARRIVAL"
-    },
-
-    {
-        id: 33,
-        name: "Woven Storage Basket",
-        category: "home",
-        description: "A natural-texture accent for an organised home.",
-        price: 17000,
-        image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=85",
-        badge: "NEW ARRIVAL"
-    },
+    }
 
 ];
 
